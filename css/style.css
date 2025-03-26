@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ font-variation-settings: "wdth" 100;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
+  color: #F0F0F0;
+}
+header{
+	width: 100%; height: 100px; border-bottom: 1px solid gray; color: rgba(203,203,203,1.00); background-color: #0D0E0C
+}
+
+
+.menu ul{
+	margin:0; padding: 0; list-style: none; display: flex
+}
+.menu{
+	padding-top: 12px
+}
+.menu ul li a{
+	padding: 10px 20px; text-decoration: none; font-size: 17px; text-transform: capitalize; color: rgba(203,203,203,1.00); 
+}
+/*drop down*/
+.menu ul li{
+	position: relative; 
+}
+
+.menu .drop-down{
+	 position: absolute; top: 100%; left: 0; flex-direction: column; width: 220px; background-color: rgba(0,0,0,0.3); display: none; z-index: 1000; min-height: 100px
+}
+.menu ul li:hover .drop-down{
+	display: block
+}
+.menu .drop-down li{
+	border-bottom: 1px white solid; min-height: 40px
+}
+
+.banner{
+	width: 100%; min-height: 500px; position: relative
+}
+.caption{
+	width: 20%; position: absolute; top: 68%; right: 40%
+}
+.caption h1{
+	font-size: 40px; color: rgba(136,51,5,1.00)
+}
+hel{
+	width: 100%; height: 80px; position: absolute; 
+}
+main{
+		width: 100%; min-height: 500px; background-color: #0D0E0C; 
+}
+.vien{
+	width: 100%l; min-height: 400px; border: 1px solid rgba(115,115,114,1.00); padding: 13px; position: relative; overflow:hidden
+}
+
+.vien:hover .icon{
+	top: 45%
+}
+.de{
+	font-size: 26px; font-weight: 500; text-align: center
+}
+.ngay{
+	font-size: 19px; text-align: center; padding-top: 10px
+}
+#feature{
+	width: 100%; min-height: 800px; background: url("../img/doom-the-dark-ages-wont-end-with-the-slayer-in-a-coffin-v0-gLjqmNqNADDP9k5i7LC_JU5miAni7-YDzYusS6Y3yI0.webp"); background-repeat: no-repeat; background-size: cover; background-position: bottom center
+}
+#feature1{
+	width: 100%; min-height: 800px; background: url("../img/ss_ba66d42e3d1ea78e5b085682484210b390eb9ccc.1920x1080.jpg"); background-repeat: no-repeat; background-size: cover; background-position: bottom center; 
+}
+#feature2{
+	width: 100%; min-height: 800px; background: url("../img/ss_18de5ba08a6468e26bdc7a991fb00d3383e36d0c.1920x1080.jpg"); background-repeat: no-repeat; background-size: cover; background-position: bottom center; 
+}
+#feature3{
+	width: 100%; min-height: 800px; background: url("../img/245e7a61-0c9b-45f7-9dd2-481187b3641e1.jpg"); background-repeat: no-repeat; background-size: cover; background-position: bottom center; 
+}
+
+.video-container {
+    position: relative; /* Giữ logo nằm trên video */
+    display: inline-block;
+}
+
+.video-container video {
+     width: 1662px;
+  height: 1080px; /* Điều chỉnh theo kích thước mong muốn */
+    height: auto;
+    display: block;
+}
+
+.logo-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa logo */
+    width: 500px; /* Điều chỉnh kích thước logo */
+    height: auto;
+    z-index: 10; /* Đảm bảo logo nằm trên video */
+}
+#social{
+	width: 100%; min-height: 350px; background-color: #33342F; background-repeat: no-repeat; background-size: cover; background-position: bottom center; text-align: center
+}
+.tua-de{
+	font-size: 62px; font-weight: 600; text-align: center; boder: 1px solid red
+}
+.text-stroke {
+    font-size: 40px;
+    font-weight: bold;
+     color: white; /* Màu chữ */
+     
+     text-shadow: 
+        -1px -1px 0 #a83b00,  
+         1px -1px 0 #a83b00,
+        -1px  1px 0 #a83b00,
+         1px  1px 0 #a83b00;
+
+}
+.noi-dung{
+	font-size: 16px; font-weight: 430; text-align: center
+}
+.mau-trang{
+	color: #F0F0F0
+}
+	
+.de-duoi{
+	font-size: 22px; font-weight: 500
+}
+.bot-bar{
+	width: 100%; height: 50px; border-bottom: 1px solid rgba(255,255,255,0.43); line-height: 50px
+}
+.nho{
+	font-size: 16px; font-weight: 350
+}
+footer{
+	width: 100%; min-height: 600px; background-color: #1D1D1D
+}
+footer ul{
+	margin: 0;padding: 0; list-style: none; display: flex; flex-direction: column
+}
+footer ul li a{
+	display: block; padding: 10px; text-decoration: none; font-weight: 350; color: rgba(255,255,255,0.43)
+}
+footer ul li a:hover{
+	color: #F0F0F0
+}
+.w-40{
+	width: 40%; height: auto; padding: 15px; float: left
+}
+.shahdow{
+	width: 100%; min-height: 300px; border: 1px solid #BDBDBD ; box-shadow: 5px 5px 7px gray; padding: 30px
+}
+.form-control{
+	padding: 8px; margin-bottom: 10px; width: 100%
+}
+.nut-nhap{
+	padding: 20px  40px; background-color: #883305; color: aliceblue;; border: pink; border-radius: 10px; cursor: pointer
+}
+.img-80{
+	width: 35%; height: auto
+}
+.img-11 {
+    opacity: 0.5; 
+    transition: opacity 0.3s; 
+}
+.img-11:hover {
+    opacity: 1; 
+}
+.dang-ky{
+	font-size: 18px; font-weight: 600
+}
+.lien-he1{
+	font-size: 48px; font-weight: 600
+}
